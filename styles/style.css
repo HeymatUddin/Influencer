@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+}
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@500&family=Raleway:ital,wght@0,500;1,500&family=Saira+Condensed:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-top: 7vh;
+}
+nav div a,i{
+    text-decoration: none;
+    margin-left: 20px;
+}
+main{
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+main section{
+    margin-top: 10vh;
+}
+.sec-one{
+    display: flex;
+}
+.one-one{
+    width: 60%;
+    padding-top:20vh;
+}
+.one-one h1,.sec-four div h1{
+    font-size: 52px;
+}
+.link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: deeppink;
+    width: 21%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 3vh;
+}
+.link i{
+    margin-left: 5px;
+}
+.one-two{
+    width: 40%;
+    position: relative;
+}
+.one-two img{
+    height: 100%;
+    width: 100%;
+    
+}
+.one-two>img{
+    height: 60vh;
+}
+.background{
+    height: 65vh;position: absolute;
+    left: 0px;
+    z-index: -1;
+}
+.section-two{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-image: radial-gradient(black,white);
+    border-image-slice: 1;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    height: 90px;
+    align-items: center;
+
+}
+.section-three>h1{
+    text-align: center;
+}
+.carts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cart{
+    background-color: rgb(255, 255, 255);
+    padding-left: 14px;
+    padding-right: 15px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    box-shadow: 0px 0px 10px rgb(170, 170, 170);
+}
+.cart img,h4,h1,span{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.fa-star{
+    margin: 0px;
+    height: 16px;
+    width: 16px;
+}
+.colored-star{
+    color: gold;
+}
+.non-colored-star{
+    color: rgb(207, 207, 207);
+}
+.cart span{
+    margin-left: 5%;
+}
+.section-three a{
+    display: flex;
+    justify-content: right;
+}
+.sec-four{
+    display: flex;
+    margin-bottom: 10vh;
+}
+.four-two{
+    padding-left: 10%;
+}
+#foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7vh 0vh;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+#foot div i{
+    margin: 10px;
+}
