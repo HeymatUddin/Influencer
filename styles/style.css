@@ -65,16 +65,13 @@ main section{
     align-items: center;
     justify-content: center;
     background-color: deeppink;
-    width: 21%;
+    width: 40%;
     border-radius: 20px;
     padding: 10px 20px;
     color: white;
     margin-top: 3vh;
     transition: background-color 1s linear,color 1s linear;
     animation: text-modifier  5s linear infinite;
-}
-.link:hover{
-    background-color: rgb(255, 72, 246);
 }
 .link i{
     margin-left: 5px;
@@ -92,7 +89,6 @@ main section{
     transition: transform 5s ease-in-out;
 }
 .sec-one:hover .frontground{
-    /* border: 2px solid red; */
     transform: rotatey(-180deg);
 }
 .background{
@@ -153,13 +149,44 @@ main section{
 .section-three a{
     display: flex;
     justify-content: right;
+    text-decoration: none;
 }
-.sec-four{
-    display: flex;
-    margin-bottom: 10vh;
+.sec-four h1{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 111, 133);
+    font-family: 'Luxurious Roman', cursive;
 }
 .four-two{
-    padding-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 10vh;
+    position: relative;
+}
+.gallery1{
+    position: relative;
+}
+.gallery{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.gallery1 p{
+    position: absolute;
+    color: rgb(236, 236, 236);
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2s linear, color 2s linear;
+}
+.gallery1:hover p{
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 #foot{
     display: flex;
@@ -167,7 +194,7 @@ main section{
     align-items: center;
     padding: 7vh 0vh;
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
     width: 100%;
 }
 #foot div i{
@@ -243,14 +270,18 @@ main section{
     .carts{
         grid-template-columns: repeat(1,1fr);
     }
-    .sec-four{
-        flex-direction: column;
+}
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .carts{
+        grid-template-columns: repeat(2,1fr);
     }
-    .four-two{
+    .one-one{
+        width: 100%;
+        padding-top: 10%;
+        justify-content: center;
+    }
+    .one-two{
         order: 1;
-        margin-bottom: 10vh;
-    }
-    .sec-four>img{
-        order: 2;
+        width: 100%;
     }
 }
