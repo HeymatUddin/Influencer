@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@500&family=Raleway:ital,wght@0,500;1,500&family=Saira+Condensed:wght@500&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 nav{
     display: flex;
@@ -31,6 +33,7 @@ main section{
 }
 .one-one{
     width: 60%;
+
     padding-top:20vh;
 }
 .one-one h1,.sec-four div h1{
@@ -53,18 +56,21 @@ main section{
 }
 .one-two{
     width: 40%;
+    height: 60vh;
     position: relative;
+    overflow: hidden;
 }
-.one-two img{
-    height: 100%;
-    width: 100%;
+.frontground{
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
     
 }
-.one-two>img{
-    height: 60vh;
-}
 .background{
-    height: 65vh;position: absolute;
+    height:100%;
+    width: 100%;
+    position: absolute;
     left: 0px;
     z-index: -1;
 }
@@ -138,4 +144,83 @@ main section{
 }
 #foot div i{
     margin: 10px;
+}
+
+.nav-three{
+    display: none;
+}
+.brand-for-mobile1,.brand-for-mobile2{
+    display: none;
+}
+@media only screen and (max-width:688px) {
+    .nav-three{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-three h2{
+        font-size: 20px;
+        background-color: red;
+    }
+    .nav-three a{
+        font-size: 40px;
+        background-color: rgb(27, 214, 2);
+    }
+    .nav-three i{
+        margin: 0px;
+        font-size: 40px;
+        background-color: rgb(0, 95, 139);
+    }
+    .nav-one,.nav-two{
+        display: none;
+    }
+    .sec-one{
+        flex-direction: column;
+    }
+    .one-one{
+        order: 2;
+        height: 50vh;
+        justify-content: center;
+    }
+    .one-one h1{
+        font-size: 40px;
+    }
+    .link{
+        width: 60%;
+    }
+    .one-two{
+        order: 1;
+        height:50vh;
+    }
+    .brand-for-laptop{
+        display: none;
+    }
+    .section-two{
+        display: flex;
+        flex-direction: column;
+    }
+    .brand-for-mobile1,.brand-for-mobile2{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .brand-strect{
+        height: 4vh;
+    }
+    .carts{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sec-four{
+        flex-direction: column;
+    }
+    .four-two{
+        order: 1;
+        margin-bottom: 10vh;
+    }
+    .sec-four>img{
+        order: 2;
+    }
 }
