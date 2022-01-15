@@ -173,14 +173,12 @@ main section{
     }
     .sec-one{
         flex-direction: column;
-        border: 1px dotted red;
     }
     .one-one{
         order: 2;
         width: 100%;
         padding-top: 10%;
         justify-content: center;
-        border: 1px solid red;
     }
     .one-one h1{
         font-size: 40px;
@@ -191,10 +189,8 @@ main section{
     .one-two{
         order: 1;
         width: 100%;
-        border: 1px dashed red;
     }
     .frontground{
-        border: 1px solid red;
         height: 40%;
     }
     .brand-for-laptop{
